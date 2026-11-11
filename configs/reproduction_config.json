@@ -1,0 +1,19 @@
+{
+  "seed": 20271111,
+  "cpu_only": true,
+  "faiss_threads": 1,
+  "gallery_size": 10000,
+  "calibration_queries": 500,
+  "test_queries": 500,
+  "top_k": 100,
+  "target_coverage": 0.9,
+  "indexes": {
+    "exact_flat": {},
+    "hnsw": {"M": 16, "efConstruction": 100, "efSearch": [8, 16, 32, 64]},
+    "ivfflat": {"nlist": 100, "nprobe": [1, 4, 8, 16, 32]}
+  },
+  "datasets": {
+    "sift1m": "https://ann-benchmarks.com/sift-128-euclidean.hdf5",
+    "glove25": "https://ann-benchmarks.com/glove-25-angular.hdf5"
+  }
+}

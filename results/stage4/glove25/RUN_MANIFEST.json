@@ -1,0 +1,12 @@
+{
+  "workload": "glove25",
+  "data_sha256": "51004cb0ae962159f0db507a51fec2b395de14b166f55976c89f16bd2f8b6391",
+  "seed": 20271111,
+  "gallery_size": 10000,
+  "calibration_size": 500,
+  "test_size": 500,
+  "target_coverage": 0.9,
+  "fixed_budget_cap": 25,
+  "faiss_version": "1.8.0",
+  "cpu_only": true
+}

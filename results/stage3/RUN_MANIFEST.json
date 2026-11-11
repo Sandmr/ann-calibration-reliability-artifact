@@ -1,0 +1,16 @@
+{
+  "seed": 20271111,
+  "cpu_only": true,
+  "faiss_version": "1.8.0",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "data_sha256": "dd6f0a6ed6b7ebb8934680f861a33ed01ff33991eaee4fd60914d854a0ca5984",
+  "calibration_size": 100,
+  "query_count": 200,
+  "top_k": 100,
+  "timing_repeats": 3,
+  "gallery_sizes": [
+    10000,
+    50000,
+    100000
+  ]
+}

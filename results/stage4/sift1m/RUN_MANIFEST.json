@@ -1,0 +1,12 @@
+{
+  "workload": "sift1m",
+  "data_sha256": "dd6f0a6ed6b7ebb8934680f861a33ed01ff33991eaee4fd60914d854a0ca5984",
+  "seed": 20271111,
+  "gallery_size": 10000,
+  "calibration_size": 500,
+  "test_size": 500,
+  "target_coverage": 0.9,
+  "fixed_budget_cap": 25,
+  "faiss_version": "1.8.0",
+  "cpu_only": true
+}

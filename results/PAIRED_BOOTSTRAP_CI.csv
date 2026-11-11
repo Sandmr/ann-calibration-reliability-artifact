@@ -1,0 +1,9 @@
+workload,comparison,metric,point_estimate,ci95_low,ci95_high,n_queries,bootstrap_reps,proposed_index,proposed_parameter
+sift1m,proposed_minus_fixed_hnsw16,coverage,0.010000000000000009,-0.016000000000000014,0.03600000000000003,500,2000,ivfflat,8
+sift1m,proposed_minus_fixed_hnsw16,set_size,11.310000000000002,10.081750000000001,12.590100000000003,500,2000,ivfflat,8
+sift1m,proposed_minus_fixed_hnsw16,omission,0.018000000000000002,-0.008,0.044,500,2000,ivfflat,8
+sift1m,proposed_minus_fixed_hnsw16,threshold_exclusion,-0.027999999999999997,-0.046000000000000006,-0.010000000000000009,500,2000,ivfflat,8
+glove25,proposed_minus_fixed_hnsw16,coverage,0.0,0.0,0.0,500,2000,hnsw,16
+glove25,proposed_minus_fixed_hnsw16,set_size,0.0,0.0,0.0,500,2000,hnsw,16
+glove25,proposed_minus_fixed_hnsw16,omission,0.0,0.0,0.0,500,2000,hnsw,16
+glove25,proposed_minus_fixed_hnsw16,threshold_exclusion,0.0,0.0,0.0,500,2000,hnsw,16

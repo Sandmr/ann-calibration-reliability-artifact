@@ -1,0 +1,4 @@
+workload,index,parameter,build_seconds,training_seconds,rss_delta_bytes,serialized_index_bytes,timing_repeats,warmup_queries
+glove25,exact_flat,0,0.00022229999922274146,0.0,1052672,1000045,5,20
+glove25,hnsw,16,0.5390118000004804,0.0,3301376,2444282,5,20
+glove25,ivfflat,8,0.01911999999992986,0.01684599999953207,2035712,1090939,5,20

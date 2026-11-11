@@ -1,0 +1,5 @@
+workload,index,parameter,fixed_mean_budget,threshold_squared_l2,calibration_mean_set_size,test_mean_set_size,empirical_coverage,target_coverage_shortfall,total_miss_rate,candidate_omission_rate,threshold_exclusion_rate,decomposition_error
+sift1m,hnsw,16,20.0,76983.0,20.0,23.386,0.724,0.176,0.276,0.04,0.236,2.775557561562892e-17
+sift1m,ivfflat,8,20.0,75654.0,20.0,23.924,0.6799999999999999,0.22,0.32,0.058,0.262,5.551115123125783e-17
+glove25,hnsw,16,20.0,9.05655574798584,20.0,20.95,0.63,0.27,0.37,0.056,0.314,0.0
+glove25,ivfflat,8,20.0,8.830598831176758,20.0,20.708,0.61,0.29,0.39,0.048,0.342,0.0

@@ -1,0 +1,59 @@
+{
+  "seed": 20271111,
+  "faiss_version": "1.8.0",
+  "cpu_only": true,
+  "calibration_size": 500,
+  "test_size": 500,
+  "top_k": 100,
+  "target_coverage": 0.9,
+  "set_budgets": {
+    "sift1m": 50.0,
+    "glove25": 120.0
+  },
+  "latency_budget_ms": 0.1,
+  "configs": [
+    [
+      "exact_flat",
+      0
+    ],
+    [
+      "hnsw",
+      8
+    ],
+    [
+      "hnsw",
+      16
+    ],
+    [
+      "hnsw",
+      32
+    ],
+    [
+      "hnsw",
+      64
+    ],
+    [
+      "ivfflat",
+      1
+    ],
+    [
+      "ivfflat",
+      4
+    ],
+    [
+      "ivfflat",
+      8
+    ],
+    [
+      "ivfflat",
+      16
+    ],
+    [
+      "ivfflat",
+      32
+    ]
+  ],
+  "sift_sha256": "dd6f0a6ed6b7ebb8934680f861a33ed01ff33991eaee4fd60914d854a0ca5984",
+  "glove_sha256": "51004cb0ae962159f0db507a51fec2b395de14b166f55976c89f16bd2f8b6391",
+  "platform": "Windows-10-10.0.26100-SP0"
+}

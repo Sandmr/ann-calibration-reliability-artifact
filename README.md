@@ -1,6 +1,6 @@
 # ICDE 2027 EAB Artifact
 
-This directory contains the public-facing reproduction materials for the ICDE 2027 EAB study of calibration transfer, reliability metrics, and system cost in approximate vector search. It is self-contained and does not contain the authors' manuscript paths, private metadata, access tokens, or the protected CVPR projects.
+This directory contains the public reproduction materials for the ICDE 2027 EAB study of calibration transfer, reliability metrics, and system cost in approximate vector search.
 
 ## Scope and reproducibility status
 
@@ -70,7 +70,7 @@ The paired bootstrap command consumes the configuration-selection query-level CS
 python scripts/generate_figures.py --experiment-root . --paper-root .
 ```
 
-This writes vector PDF/PNG figures and LaTeX tables under `figures/` and `tables/`. The included frozen figures are the versions used for the manuscript; regenerated figures should be compared visually and numerically rather than assumed byte-identical.
+This writes vector PDF/PNG figures and LaTeX tables under `figures/` and `tables/`. Regenerated figures should be compared numerically with the frozen CSV evidence.
 
 ## Mapping to paper artifacts
 
@@ -81,10 +81,10 @@ This writes vector PDF/PNG figures and LaTeX tables under `figures/` and `tables
 | Table III | `results/CALIBRATION_TRANSFER_EXTENDED.csv`, `results/FIXED_BUDGET_COMPARISON.csv` |
 | Table IV | `results/CONFIGURATION_SELECTION_RESULTS.csv`, `results/BASELINE_COMPARISON.csv` |
 | Figure 1 | `figures/figure1_failure_decomposition.*` and `scripts/generate_figures.py` |
-| Figure 2 | Stage 4 calibration-transfer CSVs |
-| Figure 3 | Stage 4 target/neighbor-recall CSVs |
+| Figure 2: TargetRecall@100 vs. NeighborRecall@100 | `figures/figure2_recall_comparison.{pdf,png}`; Stage 4 transfer CSVs |
+| Figure 3: Exact-calibrated vs. ANN-calibrated coverage and set efficiency | `figures/figure3_calibration_transfer.{pdf,png}`; Stage 4 transfer CSVs |
 | Figure 4 | Stage 3 `GALLERY_SCALE_RESULTS.csv` |
 
 ## Integrity and privacy notes
 
-The artifact excludes `.venv`, compiled Python caches, Faiss index binaries, local HDF5 data, manuscript files, CVPR paths, author names, university identifiers, and credentials. The supplied scripts accept paths as arguments and do not contain hard-coded Windows user directories.
+The artifact excludes `.venv`, compiled Python caches, Faiss index binaries, and local HDF5 data. The supplied scripts accept paths as arguments and do not contain hard-coded workstation directories.

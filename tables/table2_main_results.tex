@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Main frozen ANN retrieval and reliability results.}
+\label{tab:main}
+\begin{tabular}{llllllll}
+\hline
+workload & index & target_recall_at_100 & neighbor_recall_at_100 & empirical_coverage & mean_set_size & latency_p50_ms & latency_p95_ms \\
+\hline
+sift1m & exact\_flat & 1.000 & 1.000 & 0.868 & 37.152 & 0.148 & 0.258 \\
+sift1m & hnsw & 0.960 & 0.675 & 0.848 & 33.138 & 0.014 & 0.019 \\
+sift1m & ivfflat & 0.942 & 0.854 & 0.830 & 35.982 & 0.018 & 0.023 \\
+glove25 & exact\_flat & 1.000 & 1.000 & 0.896 & 70.586 & 0.142 & 0.180 \\
+glove25 & hnsw & 0.944 & 0.656 & 0.866 & 66.788 & 0.015 & 0.022 \\
+glove25 & ivfflat & 0.952 & 0.798 & 0.864 & 68.582 & 0.032 & 0.042 \\
+\hline
+\end{tabular}
+\end{table}
